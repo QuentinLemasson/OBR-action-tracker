@@ -6,4 +6,5 @@ export interface InitiativeItem {
     visible: boolean;
     maxActions: number;
     actionsLeft: number;
+    token: string;
 }

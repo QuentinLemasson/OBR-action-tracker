@@ -13,6 +13,7 @@ export const useInitiativeItemsUpdate = (setInitiativeItems : Function) => {
             if (isImage(item)) {
             const metadata = item.metadata[getPluginId("metadata")];
             if (isMetadata(metadata)) {
+                console.log(item)
                 initiativeItems.push({
                 id: item.id,
                 order: metadata.order,
@@ -21,6 +22,7 @@ export const useInitiativeItemsUpdate = (setInitiativeItems : Function) => {
                 visible: item.visible,
                 maxActions: metadata.maxActions,
                 actionsLeft: metadata.actionsLeft,
+                token: item.image.url,
                 });
             }
             }

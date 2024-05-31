@@ -12,6 +12,12 @@
     cursor: pointer;
 }
 
+.item-token {
+    width : 35px;
+    height : 35px;
+    margin-right: 12px;
+}
+
 .action-counter > .action-bubble {
     --action-color : beige;
     --action-size : 14px;

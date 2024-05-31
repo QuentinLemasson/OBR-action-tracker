@@ -95,6 +95,9 @@ export function InitiativeListItem({
       }}
       onDoubleClick={handleDoubleClick}
     >
+      <ListItemIcon sx={{ minWidth: "30px"}}>
+          <img className='item-token' src={initiative.token}/>
+        </ListItemIcon>
       {!initiative.visible && showHidden && (
         <ListItemIcon sx={{ minWidth: "30px", opacity: "0.5" }}>
           <VisibilityOffRounded fontSize="small" />

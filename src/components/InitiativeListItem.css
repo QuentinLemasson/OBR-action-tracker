@@ -1,0 +1,40 @@
+.action-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 6px;
+
+    height : 100%;
+    flex-grow: 0;
+    padding: 6px 12px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.action-counter > .action-bubble {
+    --action-color : beige;
+    --action-size : 14px;
+    --action-border-size : 2px;
+
+    list-style-type: none;
+    background-color: var(--action-color);
+    border-radius: 50%;
+    width: var(--action-size);
+    height: var(--action-size);
+    border: var(--action-border-size) solid var(--action-color);
+}
+
+.action-counter > .action-bubble[data-is-available=false] {
+    background-color: transparent;
+}
+
+/* HOVER BEHAVIOUR */
+
+.action-counter:hover {
+    background-color: rgba(255, 25, 224, 0.342);
+}
+
+.action-counter:hover > .action-bubble:nth-last-child(1 of .action-bubble[data-is-available=true]) {
+    background-color: rgb(175, 25, 25);
+}

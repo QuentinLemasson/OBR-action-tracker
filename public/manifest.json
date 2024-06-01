@@ -1,12 +1,14 @@
 {
-    "name": "Hello, World!",
-    "version": "1.0.0",
-    "manifest_version": 1,
-    "action": {
-      "title": "Hello, World!",
-      "icon": "/icon.svg",
-      "popover": "/",
-      "height": 600,
-      "width": 400
-    }
+  "name": "Action Tracker",
+  "version": "0.1",
+  "manifest_version": 1,
+  "author": "Quentin Lemasson",
+  "description": "Tracker d'actions pour la Galipette Cendrée",
+  "action": {
+    "title": "Initiative Tracker",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 129,
+    "width": 250
   }
+}
